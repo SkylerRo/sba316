@@ -1,0 +1,12 @@
+body {
+    background: url("https://images.hindustantimes.com/img/2022/01/07/1600x900/Pyshic_main_1641556684933_1641556693086.jpg")
+      no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+ h1{
+  text-align: center;
+ }
