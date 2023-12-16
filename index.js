@@ -1,23 +1,32 @@
+
+const body = document.body
+body.append("How Intuitive Are You?")
+
+
 const minNumber = 1;
 const maxNumber = 10;
 const answer = Math.floor(Math.random() * (maxNumber - minNumber + 1));
 
-let attempts = 3;
+let attempts = 2;
 let guess;
 let running = true;
 
-while(running) {
 
+ setTimeout(()=>{
+    while(running) {
+ 
+
+ 
     guess = window.prompt (`Pick a Number Between ${minNumber} - ${maxNumber}`);
     guess = Number(guess)
 
-    running = false;
+    
     
     if (isNaN(guess)){
         window.alert("Enter a number funny guy");
     } 
 
-    if (guess <= minNumber){
+    if (guess == 1){
         window.alert("It's definitely more than 1");
     }
 
@@ -32,12 +41,17 @@ while(running) {
     else if (guess > answer){
         window.alert("Too high! See the number in your mind.");
     }
-   else{
+   if(guess === answer){
     window.alert("Wow, you're intuition is strong! You should trust your gut always.");
-   }
-   
-   
-    }
-
+    
 }
+   
+   if (guess > attempts){
+    window.alert("This is not a guessing game. Go hug a tree or touch some grass to connect")
+    
+} 
+;  } } running = false;
+},1000)
+
+
 
